@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mia Lista di Cose da Fare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>La Mia Lista di Cose da Fare</h1>
+        
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="Aggiungi un compito...">
+            <button id="addTask">Aggiungi</button>
+        </div>
+        
+        <div class="todo-filters">
+            <button class="filter-btn active" data-filter="all">Tutti</button>
+            <button class="filter-btn" data-filter="active">Attivi</button>
+            <button class="filter-btn" data-filter="completed">Completati</button>
+        </div>
+        
+        <ul id="taskList" class="todo-list">
+            <!-- I compiti verranno aggiunti qui dinamicamente -->
+        </ul>
+        
+        <div class="todo-stats">
+            <span id="taskCount">0 compiti rimasti</span>
+            <button id="clearCompleted">Cancella completati</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
